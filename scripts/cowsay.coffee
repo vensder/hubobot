@@ -9,7 +9,7 @@
 #
 # Commands:
 #   hubot cowsay <statement> - Returns a cow that says what you want
-#   hubot cowsay random <statememnt> - Returns a random "cow" with statement
+#   hubot cowsay random <statement> - Returns a random "cow" with statement
 #
 # Author:
 #   vensder
