@@ -4,6 +4,9 @@
   "private": true,
   "author": "Dmitrii Makarov <vensder@gmail.com>",
   "description": "Just a Robot",
+  "scripts": {
+    "test": "mocha --require coffeescript/register tests"
+  },
   "dependencies": {
     "chrono-node": "^0.1.10",
     "cowsay": "^1.4.0",
@@ -21,5 +24,16 @@
   },
   "engines": {
     "node": "0.10.x"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "co": "^4.6.0",
+    "coffee-script": ">=1.9.3",
+    "coffeelint": ">=1.9.4",
+    "coffeescript": "^2.5.1",
+    "hubot-test-helper": "^1.9.0",
+    "mocha": ">=2.2.5",
+    "nock": ">=2.3.0",
+    "sinon": ">=1.14.1"
   }
 }
