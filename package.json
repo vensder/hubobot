@@ -30,7 +30,7 @@
     "co": "^4.6.0",
     "coffee-script": ">=1.9.3",
     "coffeelint": ">=1.9.4",
-    "coffeescript": "^2.5.1",
+    "coffeescript": "^1.6.3",
     "hubot-test-helper": "^1.9.0",
     "mocha": ">=2.2.5",
     "nock": ">=2.3.0",
