@@ -2,9 +2,9 @@ Helper = require('hubot-test-helper')
 expect = require('chai').expect
 
 # helper loads a specific script if it's a file
-helper = new Helper('./../scripts/ping.coffee')
-
-describe 'ping', ->
+helper = new Helper('../scripts/ip.coffee')
+console.log('ip test')
+describe 'ip', ->
   room = null
 
   beforeEach ->
@@ -15,15 +15,15 @@ describe 'ping', ->
     # Tear it down after the test to free up the listener.
     room.destroy()
 
-  context 'user says ping to hubot', ->
+  context 'user says ip to hubot', ->
     beforeEach ->
-      room.user.say 'alice', 'hubot PING'
-      room.user.say 'bob',   'hubot PING'
+      room.user.say 'alice', 'hubot ip'
+      room.user.say 'bob',   'hubot ip'
 
-    it 'should reply pong to user', ->
+    it 'should reply ip addr to user', ->
       expect(room.messages).to.eql [
-        ['alice', 'hubot PING']
-        ['hubot', 'PONG']
-        ['bob',   'hubot PING']
-        ['hubot', 'PONG']
+        ['alice', 'hubot ip']
+        ['bob',   'hubot ip']
+        ['hubot', 'Checking...']
+        ['hubot', 'Checking...']
       ]
