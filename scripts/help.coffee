@@ -5,7 +5,7 @@
 #   None
 #
 # Configuration:
-#  None
+#   None
 #
 # Commands:
 #   hubot help - Displays all of the help commands that this bot knows about.
