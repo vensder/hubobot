@@ -5,7 +5,7 @@
   "author": "Dmitrii Makarov <vensder@gmail.com>",
   "description": "Just a Robot",
   "scripts": {
-    "test": "mocha --require coffeescript/register tests"
+    "test": "mocha --require coffeescript/register tests/*"
   },
   "dependencies": {
     "chrono-node": "^0.1.10",

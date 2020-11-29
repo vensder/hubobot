@@ -26,6 +26,7 @@ asCode = (text) ->
 
 module.exports = (robot) ->
   robot.respond /ip/i, (msg) ->
+    msg.send "Checking..."
     msg.http("http://whatismyip.akamai.com/")
       .get() (err, res, body) ->
         myIP = "My external IP: #{body.toString().trim()}"

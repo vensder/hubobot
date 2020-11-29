@@ -1,14 +1,15 @@
 const Helper = require('hubot-test-helper');
 // helper loads all scripts passed a directory
-const helper = new Helper('../scripts');
+// const helper = new Helper('../scripts');
 
-// // helper loads a specific script if it's a file
-// const scriptHelper = new Helper('./scripts/specific-script.js');
+// helper loads a specific script if it's a file
+const helper = new Helper('../scripts/hi.js');
+console.log('hi test')
 
 const co     = require('co');
 const expect = require('chai').expect;
 
-describe('hello-world', function() {
+describe('hi', function() {
   beforeEach(function() {
     this.room = helper.createRoom();
   });
