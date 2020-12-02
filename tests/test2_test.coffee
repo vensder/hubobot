@@ -1,7 +1,9 @@
 Helper = require('hubot-test-helper')
-helper = new Helper('../scripts/test.coffee')
 co = require('co')
 expect = require('chai').expect
+
+helper = new Helper('../scripts/test.coffee')
+
 describe 'test2', ->
   beforeEach ->
     @room = helper.createRoom()

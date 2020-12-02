@@ -63,7 +63,7 @@ cowSay = (text = 'Moooo', cow = 'default') ->
     })
 
 asCode = (text = 'format this as a code in slack') ->
-  return("```#{text}```")
+  ("```#{text}```")
 
 module.exports = (robot) ->
   robot.respond /cowsay( random)? (.*)/i, (msg) ->

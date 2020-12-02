@@ -5,7 +5,7 @@
 #   None
 #
 # Configuration:
-#  None
+#   None
 #
 # Commands:
 #   hubot ip - Returns Hubot server's external IP address
