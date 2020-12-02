@@ -47,7 +47,8 @@ module.exports = (robot) ->
       msg.message.thread_ts = msg.message.rawMessage.ts  # to reply in thread
 
     if (msg.message && msg.message.user && msg.message.user.id)
-      msg.reply('replied to you in private!')
+      if (msg.message.room.charAt(0).toLowerCase() != 'd')  # if not in DM channel
+        msg.reply('replied to you in private!')
       robot.send({ room: msg.message.user.id }, emit)  # send in private
     else
       msg.send(emit)
