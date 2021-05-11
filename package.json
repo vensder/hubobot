@@ -19,7 +19,7 @@
     "hubot-shipit": "^0.2.1",
     "hubot-slack": "^4.8.1",
     "install": "^0.13.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "moment": "^2.8.1"
   },
   "engines": {
