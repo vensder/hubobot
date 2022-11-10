@@ -32,7 +32,7 @@
     "coffeelint": ">=1.9.4",
     "coffeescript": "^1.6.3",
     "hubot-test-helper": "^1.9.0",
-    "mocha": ">=2.2.5",
+    "mocha": ">=10.1.0",
     "nock": ">=2.3.0",
     "sinon": ">=1.14.1"
   }
